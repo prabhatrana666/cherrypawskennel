@@ -1,16 +1,28 @@
-# React + Vite
+Cherry Paws Kennel 🐾
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a client-based web project developed for a pet services and kennel business to establish a strong online presence and showcase their services in a modern and user-friendly way.
 
-Currently, two official plugins are available:
+🔗 Live Website: https://cherrypawskennel.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Project Overview
 
-## React Compiler
+Cherry Paws Kennel is a responsive and visually appealing website designed to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Present pet care and kennel services clearly and effectively
+Provide a clean and engaging user experience
+Build trust with pet owners through a professional interface
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
+Frontend: React.js
+Build Tool: Vite
+Styling: CSS / Modern UI practices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Features
+Fully responsive design (mobile + desktop)
+Smooth and fast performance using Vite
+Clean UI focused on user experience
+Component-based architecture using React
+
+📌 Purpose
+
+This project was built for a real client in the pet services domain, delivering a modern, scalable, and maintainable web solution tailored for showcasing kennel facilities and pet care offerings.
