@@ -113,7 +113,7 @@ export default function Footer() {
                                 <Phone />
                                 <div>
                                     <small>CALL 24/7</small>
-                                    <h6>+91 96289 11211</h6>
+                                    <h6>+91 88403 58106</h6>
                                 </div>
                             </div>
 
@@ -121,7 +121,7 @@ export default function Footer() {
                                 <Mail />
                                 <div>
                                     <small>EMAIL SUPPORT</small>
-                                    <h6>support@hello11.in</h6>
+                                    <h6>garimapriyanshu71095@gmail.com</h6>
                                 </div>
                             </div>
 

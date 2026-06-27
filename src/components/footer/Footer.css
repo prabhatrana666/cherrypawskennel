@@ -39,7 +39,7 @@
 }
 
 .h11f-heading {
-    color: #ffcc00;
+    color: var(--primary);
     font-weight: 700;
     margin-bottom: 25px;
     font-size: 18px;
@@ -49,7 +49,7 @@
     width: 8px;
     height: 8px;
     display: inline-block;
-    background: #ffcc00;
+    background: var(--primary);
     border-radius: 50%;
     margin-right: 10px;
 }
