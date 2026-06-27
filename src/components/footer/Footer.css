@@ -28,7 +28,7 @@
 
 .h11f-card {
     background: #0f0f10;
-    border: 1px solid #222;
+    border: 1px solid #393636;
     border-radius: 28px;
     padding: 30px;
     height: 100%;
@@ -234,4 +234,19 @@
     display: inline-flex;
     gap: 5px;
     align-items: center;
+}
+
+/* Map CSS */
+.h11f-map {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.h11f-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }

@@ -31,7 +31,7 @@ function Navbar() {
                     </div>
 
                     <div className="ms-auto call_button ">
-                        <a href="tel:8851522173" className="call-btn" id="main_call_button">
+                        <a href="tel:918840358106" className="call-btn" id="main_call_button">
                             <FiPhone /> Call Now
                         </a>
                     </div>

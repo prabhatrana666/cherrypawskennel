@@ -13,13 +13,14 @@ import {
     RotateCcw,
     Trash2,
     ExternalLink,
-    FileLock ,
-    Shield 
+    FileLock,
+    Shield
 } from "lucide-react";
 import {
     FaFacebookF,
     FaInstagram,
-    FaWhatsapp
+    FaWhatsapp,
+    FaYoutube
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./Footer.css"
@@ -44,7 +45,7 @@ export default function Footer() {
                     <div className="h11f-divider"></div>
 
                     <p className="h11f-tagline">
-                        DELHI'S MOST TRUSTED RIDE
+                        YOUR TRUSTED PUPPY PARTNER SINCE 2019
                     </p>
                 </div>
 
@@ -109,7 +110,9 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div className="h11f-contact-box">
+                            <div className="h11f-contact-box"
+                            onClick={() => window.location.href = "tel:+918840358106"}
+                            >
                                 <Phone />
                                 <div>
                                     <small>CALL 24/7</small>
@@ -117,7 +120,9 @@ export default function Footer() {
                                 </div>
                             </div>
 
-                            <div className="h11f-contact-box">
+                            <div className="h11f-contact-box"
+                            onClick={() => window.location.href = "mailto:garimapriyanshu71095@gmail.com"}
+                            >
                                 <Mail />
                                 <div>
                                     <small>EMAIL SUPPORT</small>
@@ -132,12 +137,28 @@ export default function Footer() {
                     <div className="col-lg-4">
                         <div className="h11f-card">
 
-                            <h5 className="h11f-heading">
+                            {/* <h5 className="h11f-heading">
                                 <span></span> GET THE APP
+                            </h5> */}
+                            <h5 className="h11f-heading">
+                                <span></span> FIND US
                             </h5>
 
-                            <a href="/" className="h11f-app-btn">
-                                <div>
+                            <div className="h11f-map">
+                                <iframe
+                                    title="Cherry Paws Kennel Location"
+                                    src="https://www.google.com/maps?q=Sarvodaya+Nagar,+Allahpur,+Prayagraj&output=embed"
+                                    width="100%"
+                                    height="220"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    allowFullScreen
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+
+                            <a href="/" className="h11f-app-btn d-none">
+                                <div >
                                     <small>AVAILABLE ON</small>
                                     <h4>PLAY STORE</h4>
                                 </div>
@@ -147,25 +168,32 @@ export default function Footer() {
 
                             <div className="mt-5">
                                 <small className="h11f-social-label">
-                                    CONNECT SOCIALLY
+                                    CONNECT US
                                 </small>
 
                                 <div className="d-flex gap-3 mt-3">
-                                    <a href="/" className="h11f-social-btn">
+
+                                    <a
+                                        href="https://wa.me/918840358106"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="h11f-social-btn"
+                                    >
+                                        <FaWhatsapp size={20} />
+                                    </a>
+
+                                    <a href="https://www.instagram.com/priyanshu_yadav588/"
+                                        className="h11f-social-btn" target="_blank">
+                                        <FaInstagram size={20} />
+                                    </a>
+                                    <a href="https://www.youtube.com/@cherrypawskennel2019?app=desktop&fbclid=PAb21jcASrmp1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeN6xJEamFqRQ_QpnPCjgkWVvMD4JBIf4-7lp2MI_D4TDznfG0MvQxzAdpO6g_aem_TQRJkrGq8fkwkE7822hUsw"
+                                        className="h11f-social-btn" target="_blank">
+                                        <FaYoutube size={20} />
+                                    </a>
+                                    <a href="https://www.facebook.com/61576528201218" className="h11f-social-btn">
                                         <FaFacebookF size={20} />
                                     </a>
 
-                                    <a href="/" className="h11f-social-btn">
-                                        <  FaWhatsapp
-                                            size={20} />
-                                    </a>
-
-                                    <a href="https://instagram.com/yourusername" className="h11f-social-btn">
-                                        <FaInstagram size={20} />
-                                    </a>
-                                    <a href="https://x.com/yourusername" className="h11f-social-btn">
-                                        <FaXTwitter size={20} />
-                                    </a>
                                 </div>
                             </div>
 
@@ -175,7 +203,7 @@ export default function Footer() {
                 </div>
 
                 {/* Policies */}
-                <div className="h11f-policy-wrap">
+                <div className="h11f-policy-wrap d-none">
 
                     <Link
                         to="/terms"
@@ -188,7 +216,7 @@ export default function Footer() {
                         to="/privacy"
                         className="h11f-policy-btn"
                     >
-                        <FileLock  size={16} color="var(--primary)" />
+                        <FileLock size={16} color="var(--primary)" />
                         PRIVACY POLICY
                     </Link>
                     <Link
@@ -219,13 +247,12 @@ export default function Footer() {
                 <div className="h11f-bottom">
 
                     <p>
-                        © {new Date().getFullYear()} HELLO11. BUILT FOR THE ELITE.
+                        © {new Date().getFullYear()} Cherry Paws Kennel. Owned by Priyanshu Yadav.
                     </p>
-
                     <div className="h11f-dev">
                         DEVELOPED & DESIGNED BY
 
-                        <a href="https://prabhatrana.netlify.app/" target="_blank">
+                        <a href="https://www.linkedin.com/in/prabhat-rana/" target="_blank">
                             PRABHAT RANA
                             <ExternalLink size={14} />
                         </a>
