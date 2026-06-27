@@ -1,13 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cherrypawskennel</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hello11 Cab Booking</title>
+
+  <meta name="description" content="Book taxis and rental cars with Hello11." />
+
+  <meta name="theme-color" content="#0d6efd" />
+
+  <link rel="icon" href="/logo.png" />
+
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Hello11 Cab Booking",
+      "url": "https://hello11cabbooking.netlify.app",
+      "description": "Book taxis and rental cars with Hello11.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://hello11cabbooking.netlify.app/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "TaxiService",
+      "name": "Hello11 Cab Booking",
+      "image": "https://hello11cabbooking.netlify.app/logo.png",
+      "url": "https://hello11cabbooking.netlify.app",
+      "areaServed": "Delhi NCR",
+      "serviceType": "Taxi Service",
+      "description": "Reliable cab booking and rental car service in Delhi NCR."
+    }
+  ]
+}
+</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5SBP8WLZC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L5SBP8WLZC');
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
