@@ -1,0 +1,350 @@
+body {
+    background: #faf8f6;
+    font-family: Inter, sans-serif;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.card {
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.btn-warning {
+    background: #ff7a00;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #e66d00;
+}
+
+.book_button {
+    background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #222;
+}
+
+.our_serves {
+    font-size: 70px;
+    font-weight: 900 !important;
+    color: #222222 !important;
+    font-style: italic;
+}
+
+.landing_pages {
+    margin-top: 5em;
+}
+
+.breed-card img,
+.col-6 img {
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.col-6 img:hover {
+    transform: scale(1.05);
+}
+
+.col-6 h5 {
+    font-weight: 600;
+}
+
+.breed-card {
+
+    overflow: hidden;
+    border-radius: 22px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+
+}
+
+.breed-card img {
+
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: .7s;
+
+}
+
+.breed-card:hover img {
+
+    transform: scale(1.12);
+
+}
+
+.breed-overlay {
+
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, .75));
+    color: #fff;
+
+}
+
+.breed-overlay h5 {
+
+    font-weight: 700;
+    letter-spacing: .5px;
+
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+
+    color: var(--primary);
+
+}
+
+.swiper-pagination-bullet-active {
+
+    background: var(--primary);
+
+}
+
+.breed-section {
+    background: #f8f9fc;
+}
+
+.breed-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.breed-card:hover {
+    transform: translateY(-10px);
+}
+
+.breed-img-wrapper {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.breed-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.breed-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Gradient overlay */
+.breed-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.1),
+            transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+.breed-overlay h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Button micro interaction */
+.view-btn {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Swiper tweaks */
+/* .breed-swiper .swiper-button-next,
+.breed-swiper .swiper-button-prev {
+  color: #000;
+} */
+
+.breed-swiper .swiper-pagination-bullet-active {
+    background: none;
+}
+
+.breed-swiper .swiper-button-next,
+.breed-swiper .swiper-button-prev {
+    color: #000;
+    background: white;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 25px;
+    background: #25D366;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+.breed-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 18px;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+    color: #fff;
+}
+
+.breed-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+
+    padding: 10px 14px;
+    border-radius: 30px;
+
+    background: #25d366;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 15px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+    position: relative;
+    left: -2em;
+}
+.breed-card-title{
+    color: white;
+}
+.breed-card-overlay {
+        bottom: -13em !important;
+    }
+    .breed-card-whatsapp{
+            font-size: 16px;
+    }
+@media (max-width:798px) {
+    .whatsapp-btn {
+        left: -5em;
+    }
+
+    .breed-card-overlay {
+        bottom: -13em !important;
+    }
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(37, 211, 102, 0.35);
+}
+
+.breed-card-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+    padding: 20px;
+
+    text-align: center;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.05));
+
+    opacity: 1;
+    transition: all 0.35s ease;
+}
+
+/* WHATSAPP BUTTON */
+.breed-card-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    border-radius: 30px;
+
+    background: #25D366;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.breed-card-whatsapp:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.35);
+}
+
+/* OPTIONAL: premium hover effect for card */
+.breed-img-wrapper:hover .breed-card-title {
+    transform: translateY(-4px);
+}

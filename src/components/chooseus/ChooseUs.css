@@ -24,6 +24,7 @@
 .why-title {
   font-size: 70px;
   font-weight: 800;
+  color: white;
   margin-top: 10px;
   font-style: italic;
 }
@@ -68,9 +69,10 @@
 /* TEXT */
 .why-card h3 {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
+  color: white;
   margin-bottom: 6px;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
 }
 
 .why-card p {
