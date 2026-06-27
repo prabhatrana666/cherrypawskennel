@@ -1,20 +1,28 @@
 import "./Hero.css";
 import "./PetPage.css"
 import { motion } from "framer-motion";
-import hero from "../../assets/dog.jpeg";
+import hero from "../../assets/dog.jpg";
 import german from "../../assets/dogs/german.jpeg";
 import lab from "../../assets/dogs/lab.jpeg";
 import gold from "../../assets/dogs/gold.jpeg";
 import sam from "../../assets/dogs/sam.jpeg";
 import pom from "../../assets/dogs/pom.jpeg";
 import ahi from "../../assets/dogs/ahi.jpeg";
+import shihtzu from "../../assets/dogs/shihtzu.jpeg";
+import husky from "../../assets/dogs/husky.jpeg";
+import beagle from "../../assets/dogs/beagle.jpeg";
+import rottweiler from "../../assets/dogs/rottweiler.jpeg";
+import bulldog from "../../assets/dogs/bulldog.jpeg";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { MessageCircle } from "lucide-react";
-
+import { Import, MessageCircle } from "lucide-react";
+import PetBookingModal from "./PetBookingModal"
 import {
     FaCut,
     FaDog,
@@ -33,18 +41,16 @@ import {
 } from "react-icons/fa";
 
 const breeds = [
-    { image: sam, title: "Samoyed" },
-    { image: pom, title: "Pomeranian" },
-    { image: lab, title: "Labrador" },
+    { image: lab, title: "Labrador Retriever" },
     { image: gold, title: "Golden Retriever" },
     { image: german, title: "German Shepherd" },
-    { image: ahi, title: "Shih Tzu" },
-    { image: sam, title: "Samoyed" },
     { image: pom, title: "Pomeranian" },
-    { image: lab, title: "Labrador" },
-    { image: gold, title: "Golden Retriever" },
-    { image: german, title: "German Shepherd" },
-    { image: ahi, title: "Shih Tzu" },
+    { image: sam, title: "Samoyed" },
+    { image: shihtzu, title: "Shih Tzu" },
+    { image: husky, title: "Siberian Husky" },
+    { image: beagle, title: "Beagle" },
+    { image: rottweiler, title: "Rottweiler" },
+    { image: bulldog, title: "French Bulldog" },
 ];
 const services = [
     {
@@ -121,17 +127,22 @@ const itemVariants = {
 };
 
 function PetPage() {
+    const [showModal, setShowModal] = useState(false);
 
 
     return (
         <>
-            <section className="container py-4 landing_pages">
-
+            <motion.section
+                className="container py-4 landing_pages"
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
+            >
                 <div
                     className="position-relative overflow-hidden rounded-5"
                     style={{ height: "620px" }}
                 >
-
                     <img
                         src={hero}
                         alt=""
@@ -146,41 +157,61 @@ function PetPage() {
                         }}
                     ></div>
 
-                    <div className="position-absolute top-50 start-0 translate-middle-y text-white ps-5">
+                    <div className="position-absolute top-50 start-0 translate-middle-y text-white ps-5" id="land">
 
-                        <h1
-                            className="fw-bold lh-1"
+                        {/* Heading animation */}
+                        <motion.h1
+                            className="fw-bold lh-1 main_heading_land"
                             style={{ fontSize: "4.4rem", maxWidth: "620px", color: "white" }}
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.2 }}
+                            viewport={{ once: true }}
                         >
                             Where Every Paw
                             <br />
                             Gets to Play
-                        </h1>
+                        </motion.h1>
 
-                        <p
+                        {/* Paragraph animation */}
+                        <motion.p
                             className="mt-4 fs-4 text-white-50"
                             style={{ maxWidth: "560px" }}
-                        >Trusted dog breeding, professional grooming, and loving care —
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.4 }}
+                            viewport={{ once: true }}
+                        >
+                            Trusted dog breeding, professional grooming, and loving care —
                             ensuring every pet is healthy, happy, and treated like family.
-                        </p>
+                        </motion.p>
 
-                        <div className="d-flex gap-3 mt-5">
-
-                            <button className="btn btn-warning px-5 py-3 fw-semibold rounded-3 book_button">
+                        {/* Buttons animation */}
+                        <motion.div
+                            className="d-flex gap-3 mt-5"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.6 }}
+                            viewport={{ once: true }}
+                        >
+                            <button
+                                className="btn btn-warning px-5 py-3 fw-semibold rounded-3 book_button"
+                                onClick={() => setShowModal(true)}
+                            >
                                 Book Now
                             </button>
 
-                            <button className="btn btn-outline-light px-5 py-3 fw-semibold rounded-3">
-                                Learn More
-                            </button>
-
-                        </div>
+                            <Link
+                                to="/about"
+                                className="btn btn-outline-light px-5 py-3 fw-semibold rounded-3"
+                            >
+                                About Us
+                            </Link>
+                        </motion.div>
 
                     </div>
-
                 </div>
-
-            </section>
+            </motion.section>
 
 
             {/* Services */}
@@ -240,7 +271,7 @@ function PetPage() {
                                     }}
                                 ></div>
 
-                                <p className="text-muted">
+                                <p className="text-muted m-0">
                                     {item.text}
                                 </p>
 
@@ -326,7 +357,6 @@ function PetPage() {
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
-                        autoplay={false}
                         navigation
                         breakpoints={{
                             0: { slidesPerView: 1 },
@@ -366,6 +396,10 @@ function PetPage() {
 
                 </div>
             </section>
+            <PetBookingModal
+                show={showModal}
+                handleClose={() => setShowModal(false)}
+            />
         </>
 
     );

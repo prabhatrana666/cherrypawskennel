@@ -21,7 +21,9 @@ body {
 }
 
 .btn-warning:hover {
-    background: #e66d00;
+    background: black;
+    color: white;
+    border: 1px solid white;
 }
 
 .book_button {
@@ -268,15 +270,19 @@ h4 {
     position: relative;
     left: -2em;
 }
-.breed-card-title{
+
+.breed-card-title {
     color: white;
 }
+
 .breed-card-overlay {
-        bottom: -13em !important;
-    }
-    .breed-card-whatsapp{
-            font-size: 16px;
-    }
+    bottom: -13em !important;
+}
+
+.breed-card-whatsapp {
+    font-size: 16px;
+}
+
 @media (max-width:798px) {
     .whatsapp-btn {
         left: -5em;
@@ -284,6 +290,26 @@ h4 {
 
     .breed-card-overlay {
         bottom: -13em !important;
+    }
+
+    #land .main_heading_land {
+        font-size: 33px !important;
+        font-weight: 700;
+        line-height: 1.5 !important;
+        letter-spacing: 2px;
+    }
+
+    #land {
+        padding: 0 !important;
+        margin-left: 6%;
+    }
+
+    .custom-modal .modal-content {
+        margin-bottom: 85px;
+    }
+
+    .custom-modal .modal-body {
+        padding: 18px 30px;
     }
 }
 
