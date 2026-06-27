@@ -6,7 +6,7 @@
 }
 
 .rtr-subtitle {
-    color: #facc15;
+    color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 12px;
@@ -23,7 +23,7 @@
 }
 
 .rtr-title span {
-    color: #facc15;
+    color: var(--primary);
 }
 
 .rtr-card {
@@ -45,7 +45,7 @@
     left: 18px;
     top: 50%;
     transform: translateY(-50%);
-    color: #facc15;
+    color: var(--primary);
     z-index: 2;
 }
 
@@ -67,7 +67,7 @@
 
 .rtr-input:focus {
     outline: none;
-    border-color: #facc15;
+    border-color: var(--primary);
     box-shadow: 0 0 0 4px rgba(250,204,21,.1);
 }
 
@@ -76,7 +76,7 @@
     min-width: 180px;
     border: none;
     border-radius: 16px;
-    background: #facc15;
+    background: var(--primary);
     color: #000;
     font-weight: 700;
     display: flex;
@@ -110,7 +110,7 @@
 }
 
 .rtr-feature-item svg {
-    color: #facc15;
+    color: var(--primary);
 }
 
 .rtr-instant-card {
@@ -142,7 +142,7 @@
 }
 
 .rtr-instant-title span {
-    color: #facc15;
+    color: var(--primary);
 }
 
 .rtr-whatsapp-btn,
@@ -160,7 +160,7 @@
 }
 
 .rtr-whatsapp-btn {
-    background: #facc15;
+    background: var(--primary);
     color: #000;
 }
 

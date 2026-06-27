@@ -6,12 +6,14 @@ import Footer from "../components/footer/Footer";
 import AnimationCar from "../components/hero/AnimationCar";
 import OurGarage from "../components/ourgarage/OurGarage";
 import ReadyToRoll from "../components/readytoroll/ReadyToRoll";
+import PetPage from "../components/hero/PetPage";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <PetPage/>
       <AnimationCar />
       <OurGarage/>
       <Testimonials />

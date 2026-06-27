@@ -1,6 +1,6 @@
 import "./AnimationCar.css";
 import { motion } from "framer-motion";
-import carImage from "../../assets/hero_images.webp";
+import carImage from "../../../public/dogbg.png";
 import { col } from "framer-motion/client";
 
 function AnimationCar() {
@@ -37,7 +37,7 @@ function AnimationCar() {
       </motion.div>
 
       <motion.h1
-        className="road-title text-de fst-italic"
+        className="road-title text-de fst-italic main_head_road"
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
         animate={{
           opacity: [0, 0, 1, 1],
@@ -50,7 +50,7 @@ function AnimationCar() {
           ease: "easeOut",
         }}
       >
-        HELLO<span style={{color:'var(--primary)'}}>11</span>
+        CHERRY<span style={{color:'var(--primary)'}}>PAWS</span>
       </motion.h1>
 
     </section>

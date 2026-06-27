@@ -1,50 +1,50 @@
 import "./ChooseUs.css";
 import {
-  Ticket,
-  Clock,
-  Sparkles,
   ShieldCheck,
-  CreditCard,
-  PhoneCall,
+  Bath,
+  HeartHandshake,
+  PawPrint,
+  Stethoscope,
+  MessageCircleHeart,
 } from "lucide-react";
 
 function ChooseUs() {
   const features = [
     {
-      title: "50% OFF RETURNS",
-      desc: "Flat discount on return trips",
-      icon: Ticket,
-      color: "#ffb100",
-    },
-    {
-      title: "FAIR WAITING",
-      desc: "12 mins per km free upto 40km",
-      icon: Clock,
-      color: "#00a3ff",
-    },
-    {
-      title: "PRISTINE FLEET",
-      desc: "Clean & sanitized cars",
-      icon: Sparkles,
-      color: "#00d084",
-    },
-    {
-      title: "MAXIMUM SAFETY",
-      desc: "Verified partner drivers",
+      title: "HEALTHY PUPPIES",
+      desc: "Ethically bred, healthy, and well-socialized puppies.",
       icon: ShieldCheck,
-      color: "#b14cff",
+      color: "#ff8a65",
     },
     {
-      title: "DIRECT PAYMENTS",
-      desc: "Pay driver directly via UPI/Cash",
-      icon: CreditCard,
-      color: "#7c5cff",
+      title: "EXPERT GROOMING",
+      desc: "Professional grooming for a clean, healthy, and happy pet.",
+      icon: Bath,
+      color: "#42a5f5",
     },
     {
-      title: "24/7 SUPPORT",
-      desc: "Always here to help you",
-      icon: PhoneCall,
-      color: "#ff4d5a",
+      title: "LOVING CARE",
+      desc: "Every dog receives personalized attention and compassionate care.",
+      icon: HeartHandshake,
+      color: "#ec407a",
+    },
+    {
+      title: "PREMIUM BREEDS",
+      desc: "Quality breeds raised in a safe and caring environment.",
+      icon: PawPrint,
+      color: "#ab47bc",
+    },
+    {
+      title: "HEALTH & HYGIENE",
+      desc: "Regular health checks and high standards of cleanliness.",
+      icon: Stethoscope,
+      color: "#26a69a",
+    },
+    {
+      title: "FRIENDLY SUPPORT",
+      desc: "We're always here to answer your questions and help.",
+      icon: MessageCircleHeart,
+      color: "#ef5350",
     },
   ];
 
@@ -52,9 +52,11 @@ function ChooseUs() {
     <section className="why-section mt-5">
       <div className="why-container">
         <div className="why-header">
-          <span className="why-label">ELITE STANDARDS</span>
+          <span className="why-label">WHY PET PARENTS TRUST US</span>
+
           <h2 className="why-title">
-            WHY CHOOSE <span>US?</span>
+            {/* WHY CHOOSE <span>CHERRY PAWS?</span> */}
+             WHY CHOOSE CHERRY PAWS?
           </h2>
         </div>
 
@@ -67,7 +69,7 @@ function ChooseUs() {
                 <div
                   className="why-icon"
                   style={{
-                    background: `${item.color}20`, // soft background
+                    background: `${item.color}20`,
                     color: item.color,
                   }}
                 >

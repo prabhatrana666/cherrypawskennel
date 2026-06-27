@@ -16,15 +16,7 @@ function OurGarage() {
     const [current, setCurrent] = useState(0);
     const [showModal, setShowModal] = useState(false);
 
-    // const nextSlide = () => {
-    //     setCurrent((prev) => (prev + 1) % carData.length);
-    // };
-
-    // const prevSlide = () => {
-    //     setCurrent(
-    //         (prev) => (prev - 1 + cars.length) % carData.length
-    //     );
-    // };
+    
     const nextSlide = () => {
         setCurrent((prev) => {
             if (!carData || carData.length === 0) return 0;

@@ -14,6 +14,9 @@ import {
     ShieldCheck,
     Car,
     Headphones,
+    MessageCircleMore,
+    Scissors,
+    PawPrint
 } from "lucide-react";
 
 export default function ReadyToRoll() {
@@ -46,15 +49,15 @@ export default function ReadyToRoll() {
         const formattedDate = date.toLocaleDateString("en-IN");
 
         const message = `
- New Taxi Booking Request
+ New Dog Grooming Request
 
  Name: ${formData.name}
- Pickup: ${formData.pickup}
- Drop: ${formData.drop}
+ Dog Breed: ${formData.pickup}
+ Service: ${formData.drop}
  Date: ${formattedDate}
 `;
 
-        const whatsappNumber = "918851522173";
+        const whatsappNumber = "918840358106";
 
         window.open(
             `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -71,16 +74,17 @@ export default function ReadyToRoll() {
 
                     <div className="text-center mb-5">
                         <p className="rtr-subtitle">
-                            INSTANT RESERVATION
+                          LOVE • CARE • GROOM
+
                         </p>
 
                         <h2 className="rtr-title">
-                            READY TO <span>ROLL?</span>
+                             GIFT YOUR PET THE <span>BEST CARE</span>
                         </h2>
                     </div>
 
                     <div className="rtr-card p-4 p-lg-5">
-
+                        {/* 
                         <div className="row g-4 align-items-center">
 
                             <div className="col-lg">
@@ -158,23 +162,113 @@ export default function ReadyToRoll() {
                                 </button>
                             </div>
 
+                        </div> */}
+
+                        <div className="row g-4 align-items-center">
+
+                            {/* Owner Name */}
+                            <div className="col-lg">
+                                <div className="rtr-input-wrapper">
+                                    <User size={18} className="rtr-input-icon" />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Pet Owner Name"
+                                        value={formData.ownerName}
+                                        onChange={(e) => {
+                                            const value = e.target.value.replace(/[0-9]/g, '');
+                                            handleChange({
+                                                target: {
+                                                    name: 'name',
+                                                    value: value
+                                                }
+                                            });
+                                        }}
+                                        className="rtr-input"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Pet Name */}
+                            <div className="col-lg">
+                                <div className="rtr-input-wrapper">
+                                    <PawPrint size={18} className="rtr-input-icon" />
+                                    <input
+                                        type="text"
+                                        name="pickup"
+                                        placeholder="Dog Breed"
+                                        value={formData.petName}
+                                        onChange={handleChange}
+                                        className="rtr-input"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Service */}
+                            <div className="col-lg">
+                                <div className="rtr-input-wrapper">
+                                    <Scissors size={18} className="rtr-input-icon" />
+                                    <select
+                                        name="drop"
+                                        value={formData.service}
+                                        onChange={handleChange}
+                                        className="rtr-input"
+                                    >
+                                        <option value="">Select Service</option>
+                                        <option value="Dog Grooming">Dog Grooming</option>
+                                        <option value="Puppy Booking">Puppy Booking</option>
+                                        <option value="Health Consultation">Health Consultation</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            {/* Appointment Date */}
+                            <div className="col-lg">
+                                <div className="rtr-input-wrapper">
+                                    <CalendarDays size={18} className="rtr-input-icon" />
+
+                                    <DatePicker
+                                        selected={date}
+                                        onChange={(d) => setDate(d)}
+                                        minDate={new Date()}
+                                        dateFormat="dd-MM-yyyy"
+                                        placeholderText="Preferred Date"
+                                        className="rtr-input"
+                                        popperPlacement="bottom-start"
+                                        popperClassName="rtr-datepicker-popper"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Button */}
+                            <div className="col-lg-auto">
+                                <button
+                                    onClick={handleWhatsAppBooking}
+                                    className="rtr-book-btn"
+                                >
+                                    BOOK NOW
+                                    <ArrowRight size={18} />
+                                </button>
+                            </div>
+
                         </div>
 
                         <div className="rtr-features-row">
 
                             <div className="rtr-feature-item">
                                 <ShieldCheck size={16} />
-                                Fixed Prices
+                                Trusted Breeding
                             </div>
 
                             <div className="rtr-feature-item">
-                                <Car size={16} />
-                                Clean Cars
+                                <Scissors size={16} />
+                                Expert Grooming
                             </div>
 
                             <div className="rtr-feature-item">
-                                <Headphones size={16} />
-                                24/7 Support
+                                <PawPrint size={16} />
+                                Healthy Puppies
                             </div>
 
                         </div>
@@ -186,17 +280,17 @@ export default function ReadyToRoll() {
                         <div className="text-center position-relative">
 
                             <p className="rtr-subtitle">
-                                DON'T WANT TO WAIT?
+                                GIVE YOUR DOG THE BEST CARE
                             </p>
 
                             <h3 className="rtr-instant-title">
-                                BOOK <span>INSTANTLY</span>
+                                DOG <span>GROOMING</span>
                             </h3>
 
                             <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
 
                                 <a
-                                    href="https://wa.me/918851522173"
+                                    href="https://wa.me/918840358106"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="rtr-whatsapp-btn"
@@ -206,11 +300,11 @@ export default function ReadyToRoll() {
                                 </a>
 
                                 <a
-                                    href="tel:+918851522173"
+                                    href="tel:+918840358106"
                                     className="rtr-call-btn"
                                 >
                                     <Phone size={20} />
-                                    CALL +91 96289 11211
+                                    CALL +91 88403 58106
                                 </a>
 
                             </div>
