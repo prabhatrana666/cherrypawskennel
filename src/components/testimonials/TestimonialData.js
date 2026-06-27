@@ -7,10 +7,10 @@ import vicky from "../../assets/testimonials/vicky.jpg";
 export const TestimonialData = [
     {
         name: "RAHUL SINGH",
-        city: "KHALILABAD",
+        city: "PRAYAGRAJ",
         initial: "R",
         review:
-            "Best taxi service in town. The Innova was super clean and the driver was professional.",
+            "We adopted a Labrador puppy from Cherry Paws Kennel and the experience was outstanding. The puppy was healthy and playful. Highly recommended!",
         images: rahul,
     },
     {
@@ -18,31 +18,31 @@ export const TestimonialData = [
         city: "LUCKNOW",
         initial: "A",
         review:
-            "I book Hello11 every time I travel to Basti. Always on time and very safe for solo travelers.",
+            "The owner patiently answered all my questions and guided me throughout the process. Our Golden Retriever settled into our family perfectly.",
         images: anjali,
     },
     {
         name: "MOHD. ZAID",
-        city: "GORAKHPUR",
+        city: "VARANASI",
         initial: "M",
         review:
-            "Highly recommended for outstation trips. Affordable rates and no hidden charges.",
+            "Excellent service and genuine breeders. The puppy came vaccinated, active, and exactly as promised. I'm very happy with my purchase.",
         images: zaid,
     },
     {
         name: "VICKY KHANNA",
-        city: "BASTI",
+        city: "KANPUR",
         initial: "V",
         review:
-            "Elite experience indeed. The booking process was seamless and the car arrived exactly on time.",
+            "Professional, transparent, and trustworthy. They genuinely care about their dogs and ensure every puppy goes to a loving home.",
         images: vicky,
     },
     {
         name: "SANA KHAN",
-        city: "KHALILABAD",
+        city: "PRAYAGRAJ",
         initial: "S",
         review:
-            "Safe and reliable. The driver was very polite and knew all the short routes.",
+            "I was impressed by the cleanliness, care, and quality of the puppies. Cherry Paws Kennel exceeded all my expectations. Thank you for my adorable companion!",
         images: sana,
     },
 ];

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./BottomNav.css";
 import useScrollBottom from "../../hooks/useScrollBottom";
-import { Home, KeyRound, Image, User } from "lucide-react";
+import { Home, KeyRound, Image, User,BriefcaseBusiness  } from "lucide-react";
 import FloatingSocial from "./FloatingSocial";
 
 
@@ -20,8 +20,8 @@ function BottomNav() {
                 </NavLink>
 
                 <NavLink to="/rent" className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}>
-                    <KeyRound size={22} strokeWidth={1.8} />
-                    <span>RENT</span>
+                    <BriefcaseBusiness  size={22} strokeWidth={1.8} />
+                    <span>SERVICES</span>
                 </NavLink>
 
                 <NavLink to="/gallery" className={({ isActive }) => isActive ? "nav-item active" : "nav-item"}>

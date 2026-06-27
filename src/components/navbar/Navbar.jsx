@@ -25,8 +25,12 @@ function Navbar() {
                         </div>
 
                         <div className="logo-text">
-                            <h2 className="text-uppercase">Hello<span className="text-white">11</span></h2>
-                            <p>TAXI/CAB</p>
+                            {/* <h2 className="text-uppercase">Hello<span className="text-white">11</span></h2>
+                            <p>TAXI/CAB</p> */}
+                            {/* <h2 className="text-uppercase">
+                                CherryPawsKennal
+                            </h2> */}
+                            <p> EST. 2019</p>
                         </div>
                     </div>
 

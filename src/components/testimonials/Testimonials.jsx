@@ -73,7 +73,7 @@ export default function Testimonials() {
   </div>
 
   <Swiper
-    modules={[Navigation, Autoplay]}
+    modules={[Navigation]}
     loop
     autoplay={{ delay: 4000 }}
     spaceBetween={25}

@@ -27,6 +27,7 @@ import "./Footer.css"
 import logo from "../../assets/logo.png"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import LazyGoogleMap from "./LazyGoogleMap";
 
 export default function Footer() {
     const navigate = useNavigate();
@@ -111,7 +112,7 @@ export default function Footer() {
                             </div>
 
                             <div className="h11f-contact-box"
-                            onClick={() => window.location.href = "tel:+918840358106"}
+                                onClick={() => window.location.href = "tel:+918840358106"}
                             >
                                 <Phone />
                                 <div>
@@ -121,7 +122,7 @@ export default function Footer() {
                             </div>
 
                             <div className="h11f-contact-box"
-                            onClick={() => window.location.href = "mailto:garimapriyanshu71095@gmail.com"}
+                                onClick={() => window.location.href = "mailto:garimapriyanshu71095@gmail.com"}
                             >
                                 <Mail />
                                 <div>
@@ -143,7 +144,7 @@ export default function Footer() {
                             <h5 className="h11f-heading">
                                 <span></span> FIND US
                             </h5>
-
+                            {/* 
                             <div className="h11f-map">
                                 <iframe
                                     title="Cherry Paws Kennel Location"
@@ -155,8 +156,8 @@ export default function Footer() {
                                     allowFullScreen
                                     referrerPolicy="no-referrer-when-downgrade"
                                 ></iframe>
-                            </div>
-
+                            </div> */}
+                            <LazyGoogleMap />
                             <a href="/" className="h11f-app-btn d-none">
                                 <div >
                                     <small>AVAILABLE ON</small>
