@@ -28,7 +28,7 @@ Component-based architecture using React
 
 This project was built for a real client in the pet services domain, delivering a modern, scalable, and maintainable web solution tailored for showcasing kennel facilities and pet care offerings.
 =======
-# 🚖 Cherry Cab Booking
+# 🚖 Cherry Paws Kennel
 
 <p align="center">
   <strong>A premium Progressive Web Application (PWA) built with React.js, featuring a modern taxi booking experience, responsive UI, smooth micro-interactions, third-party API integration for location autocomplete, and performance-focused frontend architecture.</strong>
