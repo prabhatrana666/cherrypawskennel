@@ -105,7 +105,7 @@ export default function Footer() {
                                 <MapPin />
                                 <div>
                                     <small>LOCATION</small>
-                                    <h6>Delhi, India</h6>
+                                    <h6>Sarvodaya Nagar, Allahpur, Prayagraj</h6>
                                 </div>
                             </div>
 
