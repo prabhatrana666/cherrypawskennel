@@ -47,13 +47,15 @@
             #8134af,
             #515bd4);
 }
+
 .twitter {
-  background: #000;
+    background: #000;
 }
 
 .facebook {
-  background: #1877f2;
+    background: #1877f2;
 }
+
 .playstore {
     background: #11a8e8;
 }
@@ -150,24 +152,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
-    color: black;
+    background: black;
+    color: var(--primary);
     cursor: pointer;
     font-size: 34px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
     transition: all .4s ease;
 }
 
+.toggle-btn:hover {
+
+    border: 1px solid rgb(197, 194, 194);
+
+    background: var(--primary);
+    color: black;
+
+}
+
+
 .toggle-btn svg {
     transition: transform .4s ease;
     font-size: 85%;
 }
 
+.youtube {
+    color: #fff;
+    transition: all 0.3s ease;
+    background: #FF0000;
+}
+
+
 /* Active State */
 
 .toggle-btn.active {
-    background: #050b18;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .toggle-btn.active svg {

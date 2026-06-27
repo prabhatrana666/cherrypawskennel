@@ -8,6 +8,8 @@
     width: 90px;
     height: 90px;
     object-fit: contain;
+    background: white;
+    border-radius: 9px;
 }
 
 .h11f-divider {
@@ -100,7 +102,7 @@
     color: #ffcc00;
 }
 
- .h11f-contact-box {
+.h11f-contact-box {
     transition: all 0.35s ease;
 }
 
@@ -121,6 +123,7 @@
 .h11f-contact-box:hover svg {
     color: #000;
 }
+
 .h11f-app-btn {
     background: #ffcc00;
     color: black;
@@ -170,6 +173,7 @@
 .h11f-social-btn:hover svg {
     transform: rotate(360deg);
 }
+
 .h11f-policy-wrap {
     margin-top: 30px;
     background: #0f0f10;
@@ -231,5 +235,3 @@
     gap: 5px;
     align-items: center;
 }
-
-
