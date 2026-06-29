@@ -254,7 +254,7 @@ export default function Footer() {
                         DEVELOPED & DESIGNED BY
 
                         <a
-                            href="https://wa.me/919876543210"
+                            href="https://wa.me/918851522173"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
