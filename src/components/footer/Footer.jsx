@@ -253,7 +253,11 @@ export default function Footer() {
                     <div className="h11f-dev">
                         DEVELOPED & DESIGNED BY
 
-                        <a href="https://www.linkedin.com/in/prabhat-rana/" target="_blank">
+                        <a
+                            href="https://wa.me/919876543210"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             PRABHAT RANA
                             <ExternalLink size={14} />
                         </a>
