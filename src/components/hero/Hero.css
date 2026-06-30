@@ -10,7 +10,12 @@
 
   padding: 120px 20px 60px;
 }
-
+@media (max-width: 768px) {
+  .dog-image {
+    object-fit: cover;
+    object-position: -10px center;
+  }
+}
 .hero-badge {
   padding: 7px 28px;
 

@@ -2,33 +2,34 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Users, Fuel, Settings, Phone, MessageCircle } from "lucide-react";
-import poster from "../assets/poster.webp";
-
+import poster from "../assets/gallery/3.jpeg";
 import {
   ShieldCheck,
-  Crosshair,
+  HeartHandshake,
   BadgeCheck,
+} from "lucide-react";
+import {
+  Crosshair,
 } from "lucide-react";
 import "./About.css";
 
 const features = [
   {
     icon: <ShieldCheck size={28} />,
-    title: "SAFETY FIRST",
-    desc: "Every drive is backed by verified drivers and insured for long-distance travel.",
+    title: "SAFE & SECURE",
+    desc: "Your pets stay in a clean, secure, and supervised environment with round-the-clock care.",
   },
   {
-    icon: <Crosshair size={28} />,
-    title: "PRECISION",
-    desc: "We value your time. GPS tracked rides ensure a hassle-free journey.",
+    icon: <HeartHandshake size={28} />,
+    title: "LOVING CARE",
+    desc: "Every pet is treated like family with personalized attention, affection, and daily care.",
   },
   {
     icon: <BadgeCheck size={28} />,
-    title: "ELITE QUALITY",
-    desc: "Premium well-maintained vehicles provide a smooth and comfortable ride.",
+    title: "TRUSTED SERVICE",
+    desc: "From boarding and grooming to daycare, we provide reliable pet care with the highest standards.",
   },
 ];
-
 function About() {
   return (
     <>
@@ -50,21 +51,23 @@ function About() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
-                <div className="hl-subtitle">
-                  <span></span>
-                  OUR LEGACY
-                </div>
+               <div className="hl-subtitle">
+  <span></span>
+  OUR LEGACY
+</div>
 
-                <h1 className="hl-title">
-                  BORN IN
-                  <br />
-                  <span>DELHI</span>
-                </h1>
+<h1 className="hl-title">
+  CARING SINCE
+  <br />
+  <span>2019</span>
+</h1>
 
-                <p className="hl-description">
-                  "Hello11 is not just a taxi service; it's a promise of safety
-                  and punctuality that started in the heart of Sant Kabir Nagar."
-                </p>
+<p className="hl-description">
+  Since 2019, Cherry Paws Kennel has been committed to delivering exceptional
+  pet care with compassion, trust, and professionalism. Every pet entrusted to
+  us receives the love, attention, and comfort they deserve, making us a
+  trusted choice for pet owners.
+</p>
               </motion.div>
             </div>
 
@@ -132,11 +135,10 @@ function About() {
             viewport={{ once: true }}
           >
             <span>
-              "OUR MISSION IS TO MAKE PREMIUM TRAVEL{" "}
-              <strong>AFFORDABLE</strong>
-              <br />
-              FOR EVERY FAMILY IN KHALILABAD."
-            </span>
+  "OUR MISSION IS TO DELIVER <strong>EXCEPTIONAL PET CARE</strong>
+  <br />
+  WITH LOVE, COMFORT, AND TRUST EVERY SINGLE DAY."
+</span>
           </motion.div>
 
         </div>
@@ -150,15 +152,16 @@ function About() {
           <p className="rtr-subtitle">
             GET IN TOUCH
           </p>
-
-          <h3 className="rtr-instant-title font-italic my_title">
-            TRAVEL WITH <span>HELLO11</span>
-          </h3>
-          <p className="small_texts">PREMIUM RIDES, TRUSTED DRIVERS, AND UNMATCHED COMFORT — ALL AT YOUR FINGERTIPS</p>
+<h3 className="rtr-instant-title font-italic my_title">
+  CARE WITH <span>CHERRY PAWS</span>
+</h3>
+<p className="small_texts">
+  SAFE BOARDING, PROFESSIONAL GROOMING, LOVING CARE, AND A HAPPY HOME AWAY FROM HOME FOR YOUR BELOVED PETS.
+</p>
           <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
 
             <a
-              href="https://wa.me/918851522173"
+              href="https://wa.me/918840358106"
               target="_blank"
               rel="noreferrer"
               className="rtr-whatsapp-btn"
@@ -168,11 +171,11 @@ function About() {
             </a>
 
             <a
-              href="tel:+918851522173"
+              href="tel:+918840358106"
               className="rtr-call-btn"
             >
               <Phone size={20} />
-              CALL +91 96289 11211
+              CALL +91 88403 58106
             </a>
 
           </div>

@@ -7,6 +7,7 @@ import AnimationCar from "../components/hero/AnimationCar";
 import OurGarage from "../components/ourgarage/OurGarage";
 import ReadyToRoll from "../components/readytoroll/ReadyToRoll";
 import PetPage from "../components/hero/PetPage";
+import AboutMain from "../components/about-us_main/AboutMain";
 
 function Home() {
   return (
@@ -15,7 +16,8 @@ function Home() {
       {/* <Hero /> */}
       <PetPage/>
       <AnimationCar />
-      <OurGarage/>
+      {/* <OurGarage/> */}
+      <AboutMain />
       <Testimonials />
       <ReadyToRoll />
       <Footer />

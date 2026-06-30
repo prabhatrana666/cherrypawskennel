@@ -8,7 +8,9 @@ import {
     MapPin,
     Navigation,
     CalendarDays,
-    X
+    PawPrint,
+    MessageSquareText
+
 } from "lucide-react";
 
 function BookingModal({ show, onClose, car }) {
@@ -33,18 +35,18 @@ function BookingModal({ show, onClose, car }) {
             return;
         }
 
-        const message = `*Rental Enquiry*
+        const message = `*Pet Enquiry*
 
-Car: ${car.name}
-Price: ${car.price}${car.unit}
+Pet: ${car.name}
+
 
 Name: ${form.name}
-Pickup: ${form.pickup}
-Drop: ${form.drop}
-Date: ${form.date}`;
+Breed: ${form.pickup}
+Service: ${form.drop}
+Remarks: ${form.date}`;
 
         window.open(
-            `https://wa.me/918851522173?text=${encodeURIComponent(message)}`,
+            `https://wa.me/918840358106?text=${encodeURIComponent(message)}`,
             "_blank"
         );
 
@@ -63,9 +65,9 @@ Date: ${form.date}`;
 
                     {/* Heading */}
                     <div className="mb-4">
-                        <p className="booking-tag">RENTAL ENQUIRY</p>
+                        <p className="booking-tag">PET ENQUIRY</p>
 
-                        <h2 className="booking-title">{car.name}</h2>
+                        <h2 className="booking-title text-white">{car.name}</h2>
 
                         <h5 className="booking-price">
                             {car.price} <span>{car.unit}</span>
@@ -91,11 +93,11 @@ Date: ${form.date}`;
 
                         {/* Pickup */}
                         <div className="input-group custom-input mb-3">
-                            <span className="input-group-text"><MapPin size={18} /></span>
+                            <span className="input-group-text"><PawPrint size={18} /></span>
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Pickup Location"
+                                placeholder="Dog Breed"
                                 value={form.pickup}
                                 onChange={(e) =>
                                     setForm({ ...form, pickup: e.target.value })
@@ -106,19 +108,32 @@ Date: ${form.date}`;
                         {/* Drop */}
                         <div className="input-group custom-input mb-3">
                             <span className="input-group-text"><Navigation size={18} /></span>
-                            <input
+                            {/* <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Drop Location"
+                                placeholder="Select Service"
                                 value={form.drop}
                                 onChange={(e) =>
                                     setForm({ ...form, drop: e.target.value })
                                 }
-                            />
+                            /> */}
+                            <select
+                                className="form-select form-control"
+                                value={form.drop}
+                                onChange={(e) =>
+                                    setForm({ ...form, drop: e.target.value })
+                                }
+                            >
+                                <option value="">Select Service</option>
+                                <option value="Dog Grooming">Dog Grooming</option>
+                                <option value="Puppy Booking">Puppy Booking</option>
+                                <option value="Health Consultation">Health Consultation</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
                         </div>
 
                         {/* Date */}
-                        <div className="input-group custom-input mb-4 cxx_dats">
+                        {/* <div className="input-group custom-input mb-4 cxx_dats">
                             <span className="input-group-text">
                                 <CalendarDays size={18} />
                             </span>
@@ -127,9 +142,21 @@ Date: ${form.date}`;
                                 selected={form.date}
                                 onChange={(date) => setForm({ ...form, date })}
                                 className="form-control "
-                                placeholderText="Select Date"
+                                placeholderText="Preferred Date"
                                 dateFormat="dd/MM/yyyy"
                                 minDate={new Date()}
+                            />
+                        </div> */}
+                        <div className="input-group custom-input mb-3">
+                            <span className="input-group-text"><MessageSquareText size={18} /></span>
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="Your Remarks"
+                                value={form.date}
+                                onChange={(e) =>
+                                    setForm({ ...form, date: e.target.value })
+                                }
                             />
                         </div>
 

@@ -1,11 +1,13 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import { ArrowRight, Users, Fuel, Settings, Phone, MessageCircle } from "lucide-react";
-import CarsData from "./CarsData";
+import { ArrowRight, Users, Fuel, Settings, Phone, MessageCircle, ClipboardPen } from "lucide-react";
+// import CarsData from "./CarsData";
+import PetsData from "./PetsData";
 import "./Rent.css";
 import { useState } from "react";
 import BookingModal from "./BookingModal";
 import { motion } from "framer-motion";
+import { PawPrint, Clock3, ShieldCheck } from "lucide-react";
 
 function Rent() {
   const [showModal, setShowModal] = useState(false);
@@ -53,14 +55,14 @@ function Rent() {
 
           {/* HEADER */}
           <div className="h11-garage-header">
-            <p className="h11-garage-subtitle">SELF DRIVE</p>
+            <p className="h11-garage-subtitle">OUR SERVICES</p>
 
             <h2 className="h11-garage-title">
-              OUR <span>GARAGE</span>
+              PET <span>CARE</span>
             </h2>
 
             <p className="h11-garage-desc">
-              PREMIUM SELECTION FOR YOUR NEXT JOURNEY
+              SAFE BOARDING, PROFESSIONAL GROOMING, DAYCARE, AND LOVING CARE FOR EVERY PET.
             </p>
           </div>
 
@@ -71,7 +73,7 @@ function Rent() {
             initial="hidden"
             animate="show"
           >
-            {CarsData.map((car, index) => (
+            {PetsData.map((car, index) => (
               <motion.div
                 className="col-lg-4 col-md-6"
                 key={index}
@@ -92,40 +94,51 @@ function Rent() {
                     <div>
                       <h3 className="h11-car-name">{car.name}</h3>
 
-                      <div className="h11-car-price">
+                      <div className="h11-car-price d-none">
                         {car.price}
                         <span>{car.unit}</span>
                       </div>
                     </div>
 
+                    {/* Desktop only */}
                     <button
-                      className="h11-arrow-btn"
+                      className="h11-arrow-btn d-none d-lg-block"
                       onClick={() => openBooking(car)}
                     >
-                      <ArrowRight size={22} />
+                      <ClipboardPen size={22} />
                     </button>
 
                   </div>
 
-                  <div className="h11-car-specs">
+                  {/* Mobile only */}
+                  <div className="d-block d-lg-none mt-3">
+                    <button
+                      className="h11-arrow-btn w-100"
+                      onClick={() => openBooking(car)}
+                    >
+                     
+                      <ClipboardPen size={22} />
+                       <span className="ms-3">Book Now</span>
+                    </button>
+                  </div>
+                  <div className="h11-car-specs d-none">
 
                     <div className="h11-spec">
-                      <Users size={16} />
-                      <span>{car.seats}</span>
+                      <PawPrint size={16} />
+                      <span>{car.type}</span>
                     </div>
 
                     <div className="h11-spec">
-                      <Fuel size={16} />
-                      <span>{car.fuel}</span>
+                      <Clock3 size={16} />
+                      <span>{car.duration}</span>
                     </div>
 
                     <div className="h11-spec">
-                      <Settings size={16} />
-                      <span>{car.transmission}</span>
+                      <ShieldCheck size={16} />
+                      <span>{car.age}</span>
                     </div>
 
                   </div>
-
                 </div>
               </motion.div>
             ))}
@@ -149,17 +162,17 @@ function Rent() {
         <div className="text-center position-relative">
 
           <p className="rtr-subtitle">
-            Want to Rent a Car?
+            Your Pet Deserves the Best
           </p>
 
           <h3 className="rtr-instant-title font-italic">
-            DRIVE IN <span>STYLE</span>
+            SAFE & <span>LOVING CARE</span>
           </h3>
 
           <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
 
             <a
-              href="https://wa.me/918851522173"
+              href="https://wa.me/918840358106"
               target="_blank"
               rel="noreferrer"
               className="rtr-whatsapp-btn"
@@ -169,11 +182,11 @@ function Rent() {
             </a>
 
             <a
-              href="tel:+918851522173"
+              href="tel:+918840358106"
               className="rtr-call-btn"
             >
               <Phone size={20} />
-              CALL +91 96289 11211
+              CALL +91 88403 58106
             </a>
 
           </div>

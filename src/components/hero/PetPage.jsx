@@ -140,7 +140,7 @@ function PetPage() {
                 viewport={{ once: true, amount: 0.3 }}
             >
                 <div
-                    className="position-relative overflow-hidden rounded-5"
+                    className="position-relative overflow-hidden rounded-5 main_height"
                     style={{ height: "620px" }}
                 >
                     <img
@@ -150,7 +150,7 @@ function PetPage() {
                     />
 
                     <div
-                        className="position-absolute top-0 start-0 w-100 h-100"
+                        className="position-absolute top-0 start-0 w-100 h-100 dog-image"
                         style={{
                             background:
                                 "linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.65) 40%,rgba(0,0,0,.12) 100%)"
@@ -203,7 +203,7 @@ function PetPage() {
 
                             <Link
                                 to="/about"
-                                className="btn btn-outline-light px-5 py-3 fw-semibold rounded-3"
+                                className="btn btn-outline-light px-5 py-3 fw-semibold rounded-3 book_button2"
                             >
                                 About Us
                             </Link>
@@ -245,7 +245,7 @@ function PetPage() {
                             >
 
                                 <div
-                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4"
+                                    className="mx-auto rounded-circle d-flex align-items-center justify-content-center mb-4 our_services_sec"
                                     style={{
                                         width: 90,
                                         height: 90,
@@ -262,7 +262,7 @@ function PetPage() {
                                 </h4>
 
                                 <div
-                                    className="mx-auto my-3"
+                                    className="mx-auto my-3 inside_service"
                                     style={{
                                         width: 45,
                                         height: 4,

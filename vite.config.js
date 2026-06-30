@@ -17,54 +17,56 @@ export default defineConfig({
       ],
 
       manifest: {
-        "name": "Hello11 Cab Booking",
-        "short_name": "Hello11",
-        "description": "Book taxis and rental cars with Hello11.",
-        "start_url": "/",
-        "display": "standalone",
-        "background_color": "#ffffff",
-        "theme_color": "#0d6efd",
-        "lang": "en",
-        "scope": "/",
-        "orientation": "portrait",
+        name: "Cherry Paws Kennel",
+        short_name: "Cherry Paws",
+        description:
+          "Professional pet boarding, grooming, daycare, and pet care services.",
+        start_url: "/",
+        scope: "/",
+        display: "standalone",
+        orientation: "portrait",
+        lang: "en",
+        background_color: "#ffffff",
+        theme_color: "#0d6efd",
 
-        "icons": [
+        icons: [
           {
-            "src": "/pwa-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any"
+            src: "/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
           },
           {
-            "src": "/pwa-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "any"
+            src: "/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
           },
           {
-            "src": "/maskable-icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable any"
-          }
-        ]
+            src: "/maskable-icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable any",
+          },
+        ],
       },
 
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp}"],
-
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         skipWaiting: true,
 
+        globPatterns: [
+          "**/*.{js,css,html,ico,png,svg,jpg,jpeg,webp,gif,woff,woff2}"
+        ],
+
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === "image",
+            urlPattern: ({ request }) =>
+              request.destination === "image",
             handler: "CacheFirst",
             options: {
               cacheName: "images-cache",
               expiration: {
-                maxEntries: 100,
+                maxEntries: 150,
                 maxAgeSeconds: 60 * 60 * 24 * 30,
               },
             },
@@ -74,10 +76,22 @@ export default defineConfig({
             urlPattern: ({ request }) =>
               request.destination === "style" ||
               request.destination === "script",
-
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "assets-cache",
+            },
+          },
+
+          {
+            urlPattern: ({ request }) =>
+              request.destination === "font",
+            handler: "CacheFirst",
+            options: {
+              cacheName: "fonts-cache",
+              expiration: {
+                maxEntries: 30,
+                maxAgeSeconds: 60 * 60 * 24 * 365,
+              },
             },
           },
         ],

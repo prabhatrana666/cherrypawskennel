@@ -15,7 +15,7 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/gallery" element={<Gallery />} />
-      <Route path="/rent" element={<Rent />} />
+      <Route path="/services" element={<Rent />} />
       <Route path="/refund" element={<RefundPolicy />} />
       <Route path="/insurance" element={<InsurancePolicy />} />
       <Route path="/privacy" element={<PrivacyPolicy />} />

@@ -11,6 +11,7 @@ import {
     FileText,
     ShieldCheck,
     RotateCcw,
+    BriefcaseBusiness,
     Trash2,
     ExternalLink,
     FileLock,
@@ -31,6 +32,14 @@ import LazyGoogleMap from "./LazyGoogleMap";
 
 export default function Footer() {
     const navigate = useNavigate();
+    const navigateTo = (path) => {
+        navigate(path);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth", // or "auto"
+        });
+    };
     return (
         <footer className="h11f-footer">
             <div className="container">
@@ -64,28 +73,28 @@ export default function Footer() {
                             <div className="row g-3">
 
                                 <div className="col-6">
-                                    <div className="h11f-menu-box" onClick={() => navigate("/")}>
+                                    <div className="h11f-menu-box" onClick={() => navigateTo("/")}>
                                         <Home size={22} />
                                         <span className="foot_nav">HOME</span>
                                     </div>
                                 </div>
 
                                 <div className="col-6">
-                                    <div className="h11f-menu-box" onClick={() => navigate("/rent")}>
-                                        <KeyRound size={22} />
-                                        <span className="foot_nav">RENT</span>
+                                    <div className="h11f-menu-box" onClick={() => navigateTo("/rent")}>
+                                        <BriefcaseBusiness size={22} />
+                                        <span className="foot_nav">SERVICES</span>
                                     </div>
                                 </div>
 
                                 <div className="col-6">
-                                    <div className="h11f-menu-box" onClick={() => navigate("/gallery")}>
+                                    <div className="h11f-menu-box" onClick={() => navigateTo("/gallery")}>
                                         <Images size={22} />
                                         <span className="foot_nav">GALLERY</span>
                                     </div>
                                 </div>
 
                                 <div className="col-6">
-                                    <div className="h11f-menu-box" onClick={() => navigate("/about")}>
+                                    <div className="h11f-menu-box" onClick={() => navigateTo("/about")}>
                                         <User size={22} />
                                         <span className="foot_nav">ABOUT</span>
                                     </div>
