@@ -188,25 +188,43 @@ export default function Footer() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="h11f-social-btn"
+                                        aria-label="Chat with us on WhatsApp"
                                     >
-                                        <FaWhatsapp size={20} />
+                                        <FaWhatsapp size={20} aria-hidden="true" />
                                     </a>
 
-                                    <a href="https://www.instagram.com/priyanshu_yadav588/"
-                                        className="h11f-social-btn" target="_blank">
-                                        <FaInstagram size={20} />
+                                    <a
+                                        href="https://www.instagram.com/priyanshu_yadav588/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="h11f-social-btn"
+                                        aria-label="Visit our Instagram profile"
+                                    >
+                                        <FaInstagram size={20} aria-hidden="true" />
                                     </a>
-                                    <a href="https://www.youtube.com/@cherrypawskennel2019?app=desktop&fbclid=PAb21jcASrmp1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeN6xJEamFqRQ_QpnPCjgkWVvMD4JBIf4-7lp2MI_D4TDznfG0MvQxzAdpO6g_aem_TQRJkrGq8fkwkE7822hUsw"
-                                        className="h11f-social-btn" target="_blank">
-                                        <FaYoutube size={20} />
+
+                                    <a
+                                        href="https://www.youtube.com/@cherrypawskennel2019?app=desktop&fbclid=PAb21jcASrmp1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeN6xJEamFqRQ_QpnPCjgkWVvMD4JBIf4-7lp2MI_D4TDznfG0MvQxzAdpO6g_aem_TQRJkrGq8fkwkE7822hUsw"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="h11f-social-btn"
+                                        aria-label="Visit our YouTube channel"
+                                    >
+                                        <FaYoutube size={20} aria-hidden="true" />
                                     </a>
-                                    <a href="https://www.facebook.com/61576528201218" className="h11f-social-btn">
-                                        <FaFacebookF size={20} />
+
+                                    <a
+                                        href="https://www.facebook.com/61576528201218"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="h11f-social-btn"
+                                        aria-label="Visit our Facebook page"
+                                    >
+                                        <FaFacebookF size={20} aria-hidden="true" />
                                     </a>
 
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
