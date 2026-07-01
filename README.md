@@ -47,7 +47,29 @@ The project follows modern React architecture with reusable components, responsi
 | 🔧 Git & GitHub        | Version Control & Source Management      |
 
 ---
+# 📂 Folder Structure
 
+```text
+cherrypawskennel/
+├── public/
+├── screenshots/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+├── styles/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
 # 🖥️ Features
 
 ### 🐶 Core Features
