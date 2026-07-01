@@ -20,6 +20,9 @@
 ## 🌍 Live Preview
 
 > **Live Website**
+## 🖥️ Desktop Preview
+
+(./screenshots/main_page.png)
 
 https://cherrypawskennel.netlify.app/
 
@@ -108,11 +111,6 @@ The project follows modern React architecture with reusable components, responsi
 | 🔧 Git & GitHub        | Version Control & Source Management      |
 
 ---
-
-## 🖥️ Desktop Preview
-
-### Homepage
-![Homepage](./screenshots/main_page.png)
 
 # 🚀 Getting Started
 
