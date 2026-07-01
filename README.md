@@ -33,67 +33,6 @@ The project follows modern React architecture with reusable components, responsi
 
 ---
 
-# 🎯 Key Highlights
-
-✅ Premium Landing Experience
-
-✅ Progressive Web Application (PWA)
-
-✅ Component-Based Architecture
-
-✅ Responsive Design
-
-✅ Mobile First Approach
-
-✅ Smooth Page Animations
-
-✅ Interactive Booking Modal
-
-✅ Performance Optimized
-
-✅ Modern UI/UX
-
-✅ SEO Friendly Structure
-
----
-
-# 🖥️ Features
-
-### 🚀 User Experience
-
-* Elegant Hero Section
-* Premium Fleet Showcase
-* Interactive Booking Form
-* Customer Testimonials
-* Responsive Image Gallery
-* Contact & CTA Sections
-* Smooth Scroll Experience
-* Premium Hover Effects
-
----
-
-### ⚡ Performance
-
-* Optimized Asset Loading
-* Lazy Friendly Component Structure
-* Mobile Optimized Layout
-* Fast Rendering
-* Lightweight Icon Library
-* Installable PWA
-
----
-
-### 🎨 UI Design
-
-* Premium Typography
-* Glassmorphism Effects
-* Modern Card Designs
-* Responsive Grid Layout
-* Smooth Micro Interactions
-* Framer Motion Animations
-
----
-
 # ⚙️ Technology Stack
 
 | Technology             | Usage                                    |
@@ -108,6 +47,38 @@ The project follows modern React architecture with reusable components, responsi
 | 🔧 Git & GitHub        | Version Control & Source Management      |
 
 ---
+
+# 🖥️ Features
+
+### 🐶 Core Features
+
+* Premium Hero Section
+* Dog Breeds Showcase
+* Puppy Care Information
+* Customer Testimonials
+* Contact & Inquiry Form
+* Fully Responsive Design
+
+---
+
+### ⚡ Performance
+
+* Fast Loading
+* Optimized Components
+* Installable PWA
+* Mobile Friendly
+
+---
+
+### 🎨 UI
+
+* Modern React UI
+* Smooth Animations
+* Glassmorphism Effects
+* Clean & Responsive Layout
+
+
+
 
 # 🚀 Getting Started
 
