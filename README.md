@@ -19,14 +19,9 @@
 
 ## 🌍 Live Preview
 
-> **Live Website**
-## 🖥️ Desktop Preview
+![Main Page](./screenshots/main_page.png)
 
-(./screenshots/main_page.png)
-
-https://cherrypawskennel.netlify.app/
-
----
+🔗 **Live Website:** https://cherrypawskennel.netlify.app/
 
 # ✨ Overview
 
