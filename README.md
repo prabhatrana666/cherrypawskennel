@@ -85,7 +85,7 @@ The project follows modern React architecture with reusable components, responsi
 ```bash
 git clone https://github.com/prabhatrana666/cherrypawskennel.git
 
-cd hello11-cab-booking
+cd cherrypawskennel
 
 npm install
 
@@ -99,18 +99,6 @@ npm run build
 ```
 
 ---
-
-# 📈 Performance Goals
-
-* Fast Initial Load
-* Responsive Across Devices
-* Optimized Rendering
-* Smooth Animations
-* Accessibility Focused
-* SEO Friendly
-
----
-
 
 ---
 
