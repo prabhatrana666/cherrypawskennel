@@ -19,15 +19,17 @@
 
 ## 🌍 Live Preview
 
-![Main Page](./screenshots/main_page.png)
+[![Main Page](./screenshots/main_page.png)](https://cherrypawskennel.netlify.app/)
 
 🔗 **Live Website:** https://cherrypawskennel.netlify.app/
 
 # ✨ Overview
 
-Hello11 Cab Booking is a modern, production-ready frontend application designed to provide a premium digital experience for taxi and cab booking services.
+**Cherry Paws Kennel** is a modern, production-ready frontend application designed to provide a premium digital experience for dog breeding, puppy adoption, and professional pet care services.
 
-The project follows modern React architecture with reusable components, responsive layouts, polished animations, and Progressive Web App capabilities to ensure excellent usability across desktop, tablet, and mobile devices.
+The project follows modern React architecture with reusable components, responsive layouts, polished animations, and Progressive Web App (PWA) capabilities to deliver a seamless experience across desktop, tablet, and mobile devices.
+
+ It showcases available dog breeds, kennel services, puppy care information, and an intuitive user interface that helps visitors explore trusted breeding and pet care solutions with ease.
 
 ---
 
