@@ -141,4 +141,3 @@ It helps others discover the project and motivates future improvements.
 Made with ❤️ using React.js by Prabhat Rana
 
 </p>
->>>>>>> f4c74e8 (Add Cherry Paws Kennel website updates)
